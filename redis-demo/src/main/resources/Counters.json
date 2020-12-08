@@ -1,0 +1,67 @@
+﻿{
+  "counters": [
+    {
+      "counterName": "incr",
+      "introduction": "给user增加1，并将此时间加入到userInList列表中",
+      "counterIndex": "1",
+      "type": "numList",
+      "keyField": ["user","userInList"],
+      "valueField": "1"
+    },
+    {
+      "counterName": "incrBy",
+      "introduction": "给user增加任意值，并将此时间加入到userInList列表中",
+      "counterIndex": "2",
+      "type": "numList",
+      "keyField": ["user","userInList"],
+      "valueField": "2"
+    },
+    {
+      "counterName": "decr",
+      "introduction": "给user减少1，并将此时间加入到userOutList列表中",
+      "counterIndex": "3",
+      "type": "numList",
+      "keyField": ["user","userOutList"],
+      "valueField": "1"
+    },
+    {
+      "counterName": "decrBy",
+      "introduction": "给user减少任意值，并将此时间加入到userOutList列表中",
+      "counterIndex": "4",
+      "type": "numList",
+      "keyField": ["user","userOutList"],
+      "valueField": "2"
+    },
+    {
+      "counterName": "showUserNum",
+      "introduction": "展示现在的user数量",
+      "counterIndex": "5",
+      "type": "num",
+      "keyField": ["user"]
+    },
+    {
+      "counterName": "showUserInFREQ",
+      "introduction": "按周期显示用户进入直播间的时间与总进入用户量",
+      "counterIndex": "6",
+      "type": "List",
+      "keyField": ["userInList"],
+      "FREQ": "202012081500 202012081700"
+    },
+    {
+      "counterName": "showUserOutFREQ",
+      "introduction": "按周期显示用户离开直播间的时间与总离开用户量",
+      "counterIndex": "7",
+      "type": "List",
+      "keyField": ["userOutList"],
+      "FREQ": "202012081500 202012081700"
+    },
+    {
+      "counterName": "showUserInOutFREQ",
+      "introduction": "按周期显示用户进入离开直播间的实时数据",
+      "counterIndex": "8",
+      "type": "List",
+      "keyField": ["userInList","userOutList"],
+      "FREQ": "202012081500 202012081700"
+    }
+  ]
+}

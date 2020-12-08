@@ -1,9 +1,7 @@
 package com.bjtu.redis.jedis;
 
-import org.junit.Test;
-
 import com.bjtu.redis.JedisInstance;
-
+import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 public class JedisInstanceTest {
@@ -15,7 +13,7 @@ public class JedisInstanceTest {
     public void test() {
         Jedis jedis = JedisInstance.getInstance().getResource();
         jedis.setex("name1", 20, "test");
-        String val = jedis.get("name");
+        String val = jedis.get("name1");
         System.out.println(val);
     }
 

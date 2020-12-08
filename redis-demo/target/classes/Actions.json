@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "actionName": "incr",
+      "introduction": "用户数量+1",
+      "retrieve": ["showUserNum"],
+      "save": ["incr"]
+    },
+    {
+      "actionName": "incrBy",
+      "introduction": "用户数量加任意值",
+      "retrieve": ["showUserNum"],
+      "save": ["incrBy"]
+    },
+    {
+      "actionName": "decr",
+      "introduction": "用户数量-1",
+      "retrieve": ["showUserNum"],
+      "save": ["decr"]
+    },
+    {
+      "actionName": "decrBy",
+      "introduction": "用户数量减任意值",
+      "retrieve": ["showUserNum"],
+      "save": ["decrBy"]
+    },
+    {
+      "actionName": "showUserNum",
+      "introduction": "展示现有用户数量",
+      "retrieve": ["showUserNum"]
+    },
+    {
+      "actionName": "showUserInFREQ",
+      "introduction": "展示一段时间内用户进入直播间的数据",
+      "retrieve": ["showUserInFREQ"]
+    },
+    {
+      "actionName": "showUserOutFREQ",
+      "introduction": "展示一段时间内用户离开直播间的数据",
+      "retrieve": ["showUserOutFREQ"]
+    },
+    {
+      "actionName": "showUserInOutFREQ",
+      "introduction": "按周期显示用户进入离开直播间的实时数据",
+      "retrieve": ["showUserInOutFREQ"]
+    }
+  ]
+}
